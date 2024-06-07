@@ -25,7 +25,7 @@ export const transformTextRun = (
   textRun: docs_v1.Schema$ParagraphElement["textRun"]
 ): Element | Text => {
   const content = textRun.content
-    .replace(/\n/g, "")
+    // .replace(/\n/g, "")
     // maintain whitespace
     .replace(/ {2}/g, " \u2002");
 
